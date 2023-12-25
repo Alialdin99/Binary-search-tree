@@ -89,13 +89,13 @@ BST::studentNode* BST::minimumID(studentNode *node)
     }
     else
     {
-        minimumID(node ->left);
+        return minimumID(node ->left);
     }
 }
 
 BST::studentNode* BST::minimumID()
 {
-    minimumID(root);
+    return minimumID(root);
 }
 
 BST::studentNode* BST::maximumID(studentNode* node)
@@ -110,13 +110,13 @@ BST::studentNode* BST::maximumID(studentNode* node)
     }
     else
     {
-        minimumID(node ->right);
+       return minimumID(node ->right);
     }
 }
 
 BST::studentNode* BST::maximumID()
 {
-    maximumID(root);
+    return maximumID(root);
 }
 
 BST::studentNode* BST::remove(studentNode* node,int studentID) {
@@ -156,6 +156,6 @@ BST::studentNode* BST::remove(studentNode* node,int studentID) {
 
 BST:: studentNode* BST:: remove(int studentID)
 {
-    remove(root,studentID);
+    return  remove(root,studentID);
 }
 
